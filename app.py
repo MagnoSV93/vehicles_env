@@ -9,7 +9,7 @@ scatter_button = st.button('Construir scatterplot')
 
 if hist_button: # al hacer clic en el botón
     # escribir un mensaje
-    st.write('Creación de un histograma para el conjunto de datos de anuncios de venta de coches')
+    st.write('Gráfico de histograma para el conjunto de datos de anuncios de venta de coches')
     
     # crear un histograma
     fig = px.histogram(car_data, x="odometer")
@@ -18,6 +18,6 @@ if hist_button: # al hacer clic en el botón
     st.plotly_chart(fig, use_container_width=True)
 
 if scatter_button:
-    st.write('Creacion de un scatterplot')
+    st.write('Gráfico de un scatterplot para el conjunto de datos de anuncios de venta de coches')
     fig = px.scatter(car_data, x="odometer", y="price")
     st.plotly_chart(fig, use_container_width=True)
